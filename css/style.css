@@ -113,4 +113,10 @@ body {
   font-weight: 700;
   color: #333;
   border-radius: 0.4em;
+  transition: background-color 0.3s, color 0.4s;
+}
+
+.modal__close:hover {
+  background-color: #4169e1;
+  color: #ccc;
 }
