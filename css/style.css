@@ -37,6 +37,7 @@ body {
 
   opacity: var(--opacity);
   pointer-events: var(--pointer);
+  transition: opacity 0.5s;
 }
 
 .modal:target {
