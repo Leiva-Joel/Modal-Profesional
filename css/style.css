@@ -47,7 +47,7 @@ body {
 
 .modal__container {
   margin: auto;
-  background-color: #fff;
+  background-color: #00f7f7;
   width: 90%;
   max-width: 600px;
   max-height: 90%;
@@ -75,6 +75,16 @@ body {
   width: 90%;
   margin: 0 auto;
   max-width: 400px;
+}
+
+.modal:target .modal__picture {
+  animation: scale 0.5s 1.5s backwards;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
 }
 
 .modal__img {
