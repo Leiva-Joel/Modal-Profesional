@@ -99,6 +99,21 @@ body {
   text-align: left;
 }
 
+.modal:target .modal__title {
+  display: block;
+  white-space: nowrap;
+  border-right: 3px solid;
+  width: 13ch;
+  animation: typing 1.5s steps(13) 1.5s infinite alternate backwards;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
 .modal__paragraph {
   margin-top: 1em;
   margin-bottom: 1em;
