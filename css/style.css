@@ -57,10 +57,34 @@ body {
   border-radius: 1em;
 }
 
+.modal:target .modal__container {
+  animation: show 1s 0.5s backwards;
+}
+
+@keyframes show {
+  0% {
+    transform: translateY(-150vh);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .modal__picture {
   width: 90%;
   margin: 0 auto;
   max-width: 400px;
+}
+
+.modal:target .modal__picture {
+  animation: scale 0.5s 1.5s backwards;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
 }
 
 .modal__img {
@@ -89,4 +113,10 @@ body {
   font-weight: 700;
   color: #333;
   border-radius: 0.4em;
+  transition: background-color 0.3s, color 0.4s;
+}
+
+.modal__close:hover {
+  background-color: #4169e1;
+  color: #ccc;
 }
