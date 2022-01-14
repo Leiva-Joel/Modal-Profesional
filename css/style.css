@@ -47,7 +47,7 @@ body {
 
 .modal__container {
   margin: auto;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 90%;
   max-width: 600px;
   max-height: 90%;
@@ -97,6 +97,21 @@ body {
   font-weight: 500;
   white-space: nowrap;
   text-align: left;
+}
+
+.modal:target .modal__title {
+  display: block;
+  white-space: nowrap;
+  border-right: 3px solid;
+  width: 13ch;
+  animation: typing 1.5s steps(13) 1.5s infinite alternate backwards;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
 }
 
 .modal__paragraph {
